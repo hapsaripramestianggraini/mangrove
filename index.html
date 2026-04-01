@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/icon/nm.png" type="image/x-icon" />
+
+  <!-- Google Fonts : POPPINS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- CSS KAMU (HARUS PALING BAWAH) -->
+  <link rel="stylesheet" href="./dist/css/style.css" />
+
+  <title>PEMANTAUAN SPASIO-TEMPORAL RESTORASI MANGROVE
+ DI PESISIR DESA BEDONO, KABUPATEN DEMAK, JAWA TENGAH TAHUN 2018-2022</title>
+</head>
+
+
+  <body id="home">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top animate__animated animate__fadeInDown"
+     style="background-color:#82C0C9; padding-top:4px; padding-bottom:4px;">
+
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center gap-2 py-0" href="#">
+      <img src="./assets/icon/UGM-removebg-preview.png"
+           alt="Logo"
+           style="height:36px; width:auto;" />
+      <span class="fw-bold text-black fs-6">
+        PEMANTAUAN RESTORASI MANGROVE DESA BEDONO TAHUN 2018-2022
+      </span>
+    </a>
+
+    <button class="navbar-toggler bg-white shadow-none" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto d-flex gap-3 text-center pt-lg-0 pt-2">
+        <li class="nav-item">
+          <a class="nav-link text-black py-1" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black py-1" href="#latarbelakang">Latar Belakang</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black py-1" href="#datadanmetode">Data & Metode</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black py-1" href="#hasil">Hasil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black py-1" href="#analisis">Analisis</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black py-1" href="#kesimpulan">Kesimpulan</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black py-1" href="#GeoAI">GeoAI</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Navbar -->
+
+
+<!-- Hero Background Only -->
+<section class="hero overflow-hidden"
+  style="
+    background-image: url('assets/images/COVEER.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* diperbesar agar proporsional */
+    display: flex;
+    align-items: center; /* vertikal rata tengah */
+  ">
+     
+  <div class="container">
+    <div class="hero-box">
+    </div>
+  </div>
+
+</section>
+<!-- End Hero -->
+
+    <!-- Hero -->
+    <section class="hero overflow-hidden mt-3">
+      <div class="container">
+        <div class="hero-box d-flex align-items-center justify-content-between flex-md-row flex-column gap-md-0 gap-5">
+          <div class="box animate__animated animate__fadeInLeft animate__delay-1s">
+            <h1 class="fw-bold mb-3 mt-3">
+               <span class="text-danger">Desa Bedono, Demak, Jawa Tengah</span> <br />
+            </h1>
+            <p class="lh-lg mb-4">Desa Bedono merupakan wilayah pesisir di Kabupaten Demak, Jawa Tengah, yang mengalami abrasi pantai cukup signifikan dalam beberapa tahun terakhir. Kondisi ini menyebabkan berkurangnya daratan serta degradasi ekosistem mangrove. Padahal, mangrove memiliki peran penting sebagai pelindung alami pantai dari gelombang laut, penyerap karbon, serta habitat bagi berbagai biota pesisir. Oleh karena itu, berbagai upaya restorasi mangrove terus dilakukan untuk mengurangi dampak abrasi dan mendukung keberlanjutan lingkungan pesisir. </p>
+           
+          </div>
+          <div class="box animate__animated animate__fadeInRight animate__delay-1s">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51985.32288966554!2d110.47320735603589!3d-6.916095557331785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70f241628af3a3%3A0x773b6272ce5dc7f8!2sBedono%2C%20Sayung%2C%20Demak%20Regency%2C%20Central%20Java!5e1!3m2!1sen!2sid!4v1774969764407!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero -->
+
+
+
+<!-- Hero Background Only -->
+<section class="hero overflow-hidden mt-3"
+class="latarbelakang" id="latarbelakang"
+  style="
+    background-image: url('assets/images/BG.png');
+    background-size: cover;
+    background-position: center;
+    height: 200px; /* diperbesar agar proporsional */
+    display: flex;
+    align-items: center; /* vertikal rata tengah */
+  ">
+    <div class="container">
+    <div class="about-box text-center" style="color:white;">
+      
+      <h1 class="fw-bold mb-4 mt-5" 
+      data-aos="fade-up" 
+      data-aos-duration="1000">
+      LATAR BELAKANG
+      </h1>
+
+      <h2 class="fw-bold mb-4 mt-5" 
+      data-aos="fade-up" 
+      data-aos-duration="1000">
+      </h2>
+
+    </div>
+</div>
+  </div>
+
+</section>
+<!-- End Hero -->
+
+<!-- Kenaikan Muka Air Laut -->
+    <section>
+      <div class="container">
+        <div class="about-box text-center">
+          <h1 class="fw-bold mb-4 mt-5" data-aos="fade-up" data-aos-duration="1000">Deskripsi Kasus</h1>
+          <p class="lh-lg mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            Desa Bedono yang terletak di wilayah pesisir Kabupaten Demak merupakan salah satu daerah yang terdampak abrasi pantai cukup parah di Jawa Tengah. Fenomena ini terjadi akibat kombinasi faktor alami seperti gelombang laut dan kenaikan muka air laut, serta aktivitas manusia seperti alih fungsi lahan pesisir. Dampaknya tidak hanya menyebabkan berkurangnya luas daratan, tetapi juga mengancam keberadaan ekosistem mangrove yang memiliki peran penting dalam menjaga keseimbangan lingkungan pesisir. Berbagai program rehabilitasi dan penanaman mangrove telah dilakukan sebagai upaya untuk memulihkan kondisi lingkungan di kawasan tersebut.
+          </p>
+          <h2 class="fw-bold mb-4 mt-5" data-aos="fade-up" data-aos-duration="1000">Mengapa Penting?</h2>
+          <div class="row justify-content-center pt-4 gap-4">
+            <div class="col col-md-5 col-12 shadow p-3 rounded" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+              <img src="./assets/images/pesisir tenggelam.jpg" alt="Projects Image" width="100%" height="300px"/>
+              <h4 class="fw-bold pt-4">Evaluasi Keberhasilan Restorasi Mangrove</h4>
+              <p>Monitoring perubahan mangrove diperlukan untuk menilai efektivitas program rehabilitasi yang telah dilakukan. Dengan data time series, perkembangan vegetasi dapat diamati secara objektif dari waktu ke waktu.</p>
+            </div>
+            <div class="col col-md-5 col-12 shadow p-3 rounded" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+              <img src="./assets/images/abrasi.jpg" alt="Projects Image" width="100%" height="300px"/>
+              <h4 class="fw-bold pt-4">Mitigasi Risiko Abrasi Pantai</h4>
+              <p>Mangrove berfungsi sebagai pelindung alami yang mampu meredam energi gelombang laut. Informasi kondisi mangrove sangat penting untuk mendukung upaya pengurangan risiko abrasi di wilayah pesisir.</p>
+            </div>
+            <div class="col col-md-5 col-12 shadow p-3 rounded" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+              <img src="./assets/images/ekosistem.jpg" alt="Projects Image" width="100%" height="300px"/>
+              <h4 class="fw-bold pt-4">Perlindungan Ekosistem Pesisir</h4>
+              <p>Mangrove merupakan habitat penting bagi berbagai biota laut dan pesisir. Pemantauan kondisi mangrove membantu memastikan keberlanjutan fungsi ekologis kawasan tersebut.</p>
+            </div>
+            <div class="col col-md-5 col-12 shadow p-3 rounded" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+              <img src="./assets/images/data.jpg" alt="Projects Image" width="100%" height="300px"/>
+              <h4 class="fw-bold pt-4">Mendukung Pengambilan Keputusan Berbasis Data</h4>
+              <p>Hasil analisis geospasial dapat menjadi dasar dalam perencanaan pengelolaan wilayah pesisir yang lebih berkelanjutan dan berbasis data ilmiah, sehingga kebijakan yang diambil menjadi lebih tepat sasaran.</p>
+            </div>
+    
+        </div>
+      </div>
+    </section>
+
+
+<!-- Hero Background Only -->
+<section class="hero overflow-hidden mt-3"
+class="datadanmetode" id="datadanmetode"
+  style="
+    background-image: url('assets/images/BG.png');
+    background-size: cover;
+    background-position: center;
+    height: 200px; /* diperbesar agar proporsional */
+    display: flex;
+    align-items: center; /* vertikal rata tengah */
+  ">
+    <div class="container">
+    <div class="about-box text-center" style="color:white;">
+      
+      <h1 class="fw-bold mb-4 mt-5" 
+      data-aos="fade-up" 
+      data-aos-duration="1000">
+      DATA & METODE
+      </h1>
+
+      <h2 class="fw-bold mb-4 mt-5" 
+      data-aos="fade-up" 
+      data-aos-duration="1000">
+      </h2>
+
+    </div>
+</div>
+  </div>
+
+</section>
+<!-- End Hero -->
+
+<!-- Mangrove -->
+    <section>
+      <div class="container">
+        <div class="about-box text-center">
+          <h2 class="fw-bold mb-4 mt-5" data-aos="fade-up" data-aos-duration="1000">DATA YANG DIGUNAKAN</h2>
+           <div class="row justify-content-center pt-4 gap-4">
+            <div class="col col-md-5 col-12 shadow p-3 rounded" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+              <img src="./assets/images/LANDSAT.jpg" alt="Projects Image" width="100%" height="300px"/>
+              <h4 class="fw-bold pt-4">Citra Landsat 8 (2018–2022)</h4>
+              <p>Digunakan untuk memantau perubahan kondisi vegetasi mangrove secara multi-temporal dengan resolusi spasial 30 meter.
+</p>           
+            </div>
+            <div class="col col-md-5 col-12 shadow p-3 rounded" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+              <img src="./assets/images/bedono.png" alt="Projects Image" width="100%" height="300px"/>
+              <h4 class="fw-bold pt-4">Area of Interest (ROI) Desa Bedono</h4>
+              <p>Batas wilayah studi difokuskan pada kawasan pesisir Desa Bedono untuk melihat dampak restorasi mangrove. 
+</p>
+            </div>
+           <div class="about-box text-center">
+          <h2 class="fw-bold mb-4 mt-5" data-aos="fade-up" data-aos-duration="1000">TOOLS YANG DIGUNAKAN</h2>
+           <div class="row justify-content-center pt-1 gap-1">
+
+          <div class="box pt-4 d-flex gap-3 flex-md-row flex-column">
+            <div class="service p-4 shadow text-white rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" style="background-color: #4169E1;">
+              <i class="fa-solid fa-folder-tree mb-3"></i>
+              <h4 class="mb-3 fw-bold">Google Earth Engine (GEE)</h4>
+              <p class="lh-lg">Digunakan untuk mengolah data citra satelit secara cepat menggunakan teknologi cloud computing sehingga analisis perubahan mangrove dapat dilakukan secara efisien.</p>
+            </div>
+            <div class="service p-4 shadow  text-white rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" style="background-color: #4169E1;">
+              <i class="fa-solid fa-user-tie mb-3"></i>
+              <h4 class="mb-3 fw-bold">Google Earth Engine Apps</h4>
+              <p class="lh-lg">Untuk menampilkan hasil analisis dalam bentuk dashboard interaktif berupa peta dan grafik perubahan mangrove.</p>
+            </div>
+            <div class="service p-4 shadow text-white rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900" style="background-color: #4169E1;">
+              <i class="fa-solid fa-star mb-3"></i>
+              <h4 class="mb-3 fw-bold">JavaScript API</h4>
+              <p class="lh-lg">Digunakan untuk membuat script analisis NDVI, filtering data citra, serta pembuatan grafik time series perubahan vegetasi mangrove.</p>
+            </div>
+
+            </div>
+           <div class="about-box text-center">
+          <h2 class="fw-bold mb-4 mt-5" data-aos="fade-up" data-aos-duration="1000">METODE</h2>
+           <div class="row justify-content-center pt-1 gap-1">
+
+          <div class="box pt-4 d-flex gap-3 flex-md-row flex-column">
+            <div class="service p-4 shadow text-white rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" style="background-color: #166947;">
+              <i class="fa-solid fa-folder-tree mb-3"></i>
+              <h4 class="mb-3 fw-bold">NDVI (Normalized Difference Vegetation Index)</h4>
+              <p class="lh-lg">Mengidentifikasi tingkat kesehatan vegetasi mangrove berdasarkan nilai indeks vegetasi yang diperoleh dari kombinasi band Near Infrared (NIR) dan Red. Nilai NDVI yang lebih tinggi menunjukkan vegetasi yang lebih sehat dan rapat.</p>
+            </div>
+            <div class="service p-4 shadow  text-white rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" style="background-color: #166947;">
+              <i class="fa-solid fa-user-tie mb-3"></i>
+              <h4 class="mb-3 fw-bold">Analisis Time Series</h4>
+              <p class="lh-lg">Untuk melihat dinamika perubahan kondisi mangrove dari tahun 2018 sampai 2022 sehingga dapat diketahui tren pertumbuhan atau penurunan vegetasi dari waktu ke waktu.</p>
+            </div>
+            <div class="service p-4 shadow text-white rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900" style="background-color: #166947;">
+              <i class="fa-solid fa-star mb-3"></i>
+              <h4 class="mb-3 fw-bold">Perhitungan Luas Mangrove</h4>
+              <p class="lh-lg">Dilakukan menggunakan threshold NDVI tertentu untuk mengklasifikasikan area mangrove, kemudian dihitung luasnya setiap tahun untuk mengetahui perubahan area hasil restorasi.</p>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- Mangrove-->
+
+         
+
+
+<!-- Tumpahan Minyak -->
+
+<!-- Hero Background Only -->
+<section class="hero overflow-hidden mt-3"
+class="hasil" id="hasil"
+  style="
+    background-image: url('assets/images/BG.png');
+    background-size: cover;
+    background-position: center;
+    height: 200px; /* diperbesar agar proporsional */
+    display: flex;
+    align-items: center; /* vertikal rata tengah */
+  ">
+    <div class="container">
+    <div class="about-box text-center" style="color:white;">
+      
+      <h1 class="fw-bold mb-4 mt-5" 
+      data-aos="fade-up" 
+      data-aos-duration="1000">
+      HASIL
+      </h1>
+
+      <h2 class="fw-bold mb-4 mt-5" 
+      data-aos="fade-up" 
+      data-aos-duration="1000">
+      </h2>
+
+    </div>
+</div>
+  </div>
+
+</section>
+<!-- End Hero -->
+    <section>
+      <div class="container">
+        
+          <iframe 
+    src="https://hapsaripramestianggraini.users.earthengine.app/view/restorasimangrove"
+    width="100%"
+    height="800"
+    style="border:none;">
+</iframe>
+          
+        </div>
+      </div>
+    </section>
+    <!-- tumpahan Minyak -->
+
+<!-- Hero Background Only -->
+<section class="hero overflow-hidden mt-3"
+class="analisis" id="analisis"
+  style="
+    background-image: url('assets/images/BG.png');
+    background-size: cover;
+    background-position: center;
+    height: 200px; /* diperbesar agar proporsional */
+    display: flex;
+    align-items: center; /* vertikal rata tengah */
+  ">
+    <div class="container">
+    <div class="about-box text-center" style="color:white;">
+      
+      <h1 class="fw-bold mb-4 mt-5" 
+      data-aos="fade-up" 
+      data-aos-duration="1000">
+      ANALISIS
+      </h1>
+
+      <h2 class="fw-bold mb-4 mt-5" 
+      data-aos="fade-up" 
+      data-aos-duration="1000">
+      </h2>
+
+    </div>
+</div>
+  </div>
+
+</section>
+<!-- End Hero -->
+
+<!-- Terumbu -->
+    <section>
+      <div class="container">
+        <div class="about-box text-center">
+          <h1 class="fw-bold mb-4 mt-5" data-aos="fade-up" data-aos-duration="1000">Grafik NDVI</h1>
+        <div style="text-align:center; margin-top:40px;">
+    <img src="assets/images/grafik ndvi.png" 
+         alt="Peta Mangrove Bedono"
+         style="width:60%; border-radius:10px;">
+</div>
+          <div class="box pt-4 d-flex gap-3 flex-md-row flex-column">
+            <div class="service p-4 shadow text-white rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" style="background-color: #4169E1;">
+              <i class="fa-solid fa-folder-tree mb-3"></i>
+              <h4 class="mb-3 fw-bold">Tahun 2018 - 2019</h4>
+              <p class="lh-lg">Terjadi penurunan tajam nilai NDVI dari angka mendekati 0 ke titik terendahnya di kisaran -0.130. Nilai negatif ini mengindikasikan bahwa pada tahun 2019, area tersebut didominasi oleh badan air atau lahan yang tergenang (mungkin akibat kenaikan air laut atau abrasi parah).
+</p>
+            </div>
+            <div class="service p-4 shadow  text-white rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" style="background-color: #4169E1;">
+              <i class="fa-solid fa-user-tie mb-3"></i>
+              <h4 class="mb-3 fw-bold">Tahun 2019 - 2021</h4>
+              <p class="lh-lg"> Terdapat tren pemulihan yang signifikan. Nilai NDVI naik hingga mencapai angka positif (sekitar 0.040) pada tahun 2021. Ini menunjukkan adanya pertumbuhan kembali vegetasi atau keberhasilan program rehabilitasi mangrove.</p>
+            </div>
+            <div class="service p-4 shadow  text-white rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" style="background-color: #4169E1;">
+              <i class="fa-solid fa-user-tie mb-3"></i>
+              <h4 class="mb-3 fw-bold">Tahun 2021 - 2022</h4>
+              <p class="lh-lg">Sedikit mengalami penurunan, namun tetap berada di angka positif, menandakan kondisi vegetasi yang relatif lebih stabil dibandingkan periode 2019.</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="about-box text-center">
+          <h1 class="fw-bold mb-4 mt-5" data-aos="fade-up" data-aos-duration="1000">Grafik Luas Mangrove</h1>
+        <div style="text-align:center; margin-top:40px;">
+    <img src="assets/images/grafik luas.png" 
+         alt="Peta Mangrove Bedono"
+         style="width:60%; border-radius:10px;">
+</div>
+          <div class="box pt-4 d-flex gap-3 flex-md-row flex-column">
+            <div class="service p-4 shadow text-white rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" style="background-color: #4169E1;">
+              <i class="fa-solid fa-folder-tree mb-3"></i>
+              <h4 class="mb-3 fw-bold">Puncak Luasan (2019)</h4>
+              <p class="lh-lg">Luas mangrove tercatat mencapai titik tertinggi pada tahun 2019 (sekitar 970 Ha).
+</p>
+            </div>
+            <div class="service p-4 shadow  text-white rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" style="background-color: #4169E1;">
+              <i class="fa-solid fa-user-tie mb-3"></i>
+              <h4 class="mb-3 fw-bold">Penurunan Drastis (2019 - 2021)</h4>
+              <p class="lh-lg"> Terjadi penyusutan luas lahan yang sangat tajam hingga menyentuh angka terendah di tahun 2021 (sekitar 630 Ha). Kehilangan lebih dari 300 hektar dalam dua tahun mengindikasikan adanya tekanan lingkungan yang berat, seperti konversi lahan atau abrasi.</p>
+            </div>
+            <div class="service p-4 shadow  text-white rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" style="background-color: #4169E1;">
+              <i class="fa-solid fa-user-tie mb-3"></i>
+              <h4 class="mb-3 fw-bold">Pemulihan (2021 - 2022)</h4>
+              <p class="lh-lg">Luas area mulai kembali meningkat di tahun 2022 menuju angka 730 Ha.</p>
+            </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="about-box text-center">
+          <h1 class="fw-bold mb-4 mt-5" data-aos="fade-up" data-aos-duration="1000">Korelasi</h1>
+        <div style="text-align:center; margin-top:40px;">
+</div>
+          <div class="box pt-4 d-flex gap-3 flex-md-row flex-column">
+            <div class="service p-4 shadow text-white rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" style="background-color: #4169E1;">
+              <i class="fa-solid fa-folder-tree mb-3"></i>
+              <h4 class="mb-3 fw-bold">Kontradiksi Tahun 2019</h4>
+              <p class="lh-lg">Pada tahun 2019, Luas Mangrove berada di titik tertinggi, namun Nilai NDVI justru berada di titik terendah. Hal ini kemungkinan disebabkan oleh kondisi mangrove yang secara administratif masih tercatat sebagai "wilayah mangrove", namun secara biofisik sedang mengalami kerusakan parah atau terendam banjir rob yang tinggi. Karena NDVI sangat sensitif terhadap air, keberadaan air di bawah tajuk mangrove atau kondisi daun yang stres/rusak menyebabkan nilai NDVI anjlok meskipun luasannya masih terdeteksi.
+</p>
+            </div>
+            <div class="service p-4 shadow  text-white rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" style="background-color: #4169E1;">
+              <i class="fa-solid fa-user-tie mb-3"></i>
+              <h4 class="mb-3 fw-bold">Fase Pemulihan (2021 - 2022)</h4>
+              <p class="lh-lg">Pada periode ini, kedua grafik menunjukkan tren positif yang sinkron. Kenaikan luas lahan di tahun 2022 yang dibarengi dengan nilai NDVI yang tetap positif menunjukkan hasil dari upaya reboisasi atau suksesi alami. Vegetasi yang baru ditanam mulai menutupi permukaan tanah/air, sehingga meningkatkan nilai pantulan klorofil (NDVI) sekaligus menambah total luasan wilayah mangrove yang terpetakan.
+</p>
+            </div>
+
+        </div>
+        
+      </div>
+    </section>
+
+        <section>
+      <div class="container">
+        <div class="about-box text-center">
+          <h1 class="fw-bold mb-4 mt-5" data-aos="fade-up" data-aos-duration="1000">Pihak Yang Terlibat</h1>
+        <div style="text-align:center; margin-top:40px;">
+</div>
+          <div class="box pt-4 d-flex gap-3 flex-md-row flex-column">
+            <div class="service p-4 shadow text-white rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" style="background-color: #4169E1;">
+              <i class="fa-solid fa-folder-tree mb-3"></i>
+              <h4 class="mb-3 fw-bold">Masyarakat Lokal & Pegiat Lingkungan</h4>
+              <p class="lh-lg">Dalam hal ini banyak petani lokal yang turut membantu melakukan penanaman bibit mangrove.</p>
+            </div>
+            <div class="service p-4 shadow  text-white rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" style="background-color: #4169E1;">
+              <i class="fa-solid fa-user-tie mb-3"></i>
+              <h4 class="mb-3 fw-bold">Pemerintah & Kelurahan</h4>
+              <p class="lh-lg">Hal ini menjadi inisiatif dan kebijakan pemerintah sebagai upaya dalam mendukung sustainability lingkungan.
+</p>
+            </div>
+            <div class="service p-4 shadow  text-white rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" style="background-color: #4169E1;">
+              <i class="fa-solid fa-user-tie mb-3"></i>
+              <h4 class="mb-3 fw-bold">CSR Perusahaan dan Komunitas Lingkungan</h4>
+              <p class="lh-lg">Merupakan bakti lingkungan yang dilakukan oleh perusahaan dan komunitas sebagai bentuk tanggung jawab dalam kompensasi karbon.
+</p>
+            </div>
+
+        </div>
+        
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="about-box text-center">
+          <h1 class="fw-bold mb-4 mt-5" data-aos="fade-up" data-aos-duration="1000">Implikasi Terhadap Lingkungan & Masyarakat</h1>
+        <div style="text-align:center; margin-top:40px;">
+</div>
+          <div class="box pt-4 d-flex gap-3 flex-md-row flex-column">
+            <div class="service p-4 shadow text-white rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" style="background-color: #4169E1;">
+              <i class="fa-solid fa-folder-tree mb-3"></i>
+              <h4 class="mb-3 fw-bold">Pemulihan Ekosistem</h4>
+              <p class="lh-lg">Peningkatan nilai NDVI dan luas mangrove pada periode 2021-2022 menunjukkan keberhasilan restorasi atau suksesi alami yang memperbaiki kualitas vegetasi di pesisir.</p>
+            </div>
+            <div class="service p-4 shadow  text-white rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" style="background-color: #4169E1;">
+              <i class="fa-solid fa-user-tie mb-3"></i>
+              <h4 class="mb-3 fw-bold">Mitigasi Abrasi</h4>
+              <p class="lh-lg">Restorasi ini krusial mengingat wilayah Bedono mengalami abrasi parah yang sebelumnya telah mengubah kawasan hijau dan pemukiman penduduk menjadi badan air.
+
+</p>
+            </div>
+            <div class="service p-4 shadow  text-white rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" style="background-color: #4169E1;">
+              <i class="fa-solid fa-user-tie mb-3"></i>
+              <h4 class="mb-3 fw-bold">Stabilitas Biofisik</h4>
+              <p class="lh-lg">Kehadiran mangrove yang sehat (NDVI positif) memberikan perlindungan fisik bagi wilayah pesisir dari ancaman kenaikan air laut.
+</p>
+            </div>
+
+        </div>
+        
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="about-box text-center">
+          <h1 class="fw-bold mb-4 mt-5" data-aos="fade-up" data-aos-duration="1000">Potensi Konflik</h1>
+        <div style="text-align:center; margin-top:40px;">
+</div>
+          <div class="box pt-4 d-flex gap-3 flex-md-row flex-column">
+            <div class="service p-4 shadow text-white rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" style="background-color: #4169E1;">
+              <i class="fa-solid fa-folder-tree mb-3"></i>
+              <h4 class="mb-3 fw-bold">Pemanfaatan Lahan</h4>
+              <p class="lh-lg">Terdapat sejarah kegiatan masif pemanfaatan daerah mangrove yang menyebabkan hilangnya vegetasi sebelum tahun 2017. Hal ini berpotensi menimbulkan konflik kepentingan antara kebutuhan ekonomi masyarakat (seperti tambak atau konversi lahan) dengan upaya konservasi.</p>
+            </div>
+            <div class="service p-4 shadow  text-white rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" style="background-color: #4169E1;">
+              <i class="fa-solid fa-user-tie mb-3"></i>
+              <h4 class="mb-3 fw-bold">Status Administratif vs Realitas Lapangan</h4>
+              <p class="lh-lg">Adanya kontradiksi pada tahun 2019, di mana secara administratif tercatat sebagai "wilayah mangrove" yang luas namun secara biofisik rusak atau terendam air, dapat memicu ketidaksesuaian data dalam pengambilan kebijakan atau klaim kepemilikan lahan.
+
+</p>
+      
+
+        </div>
+        
+      </div>
+    </section>
+
+        <section>
+      <div class="container">
+        <div class="about-box text-center">
+          <h1 class="fw-bold mb-4 mt-5" data-aos="fade-up" data-aos-duration="1000">Kebijakan Yang Relevan</h1>
+        <div style="text-align:center; margin-top:40px;">
+</div>
+          <div class="box pt-4 d-flex gap-3 flex-md-row flex-column">
+            <div class="service p-4 shadow text-white rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" style="background-color: #4169E1;">
+              <i class="fa-solid fa-folder-tree mb-3"></i>
+              <h4 class="mb-3 fw-bold">UU No.1 Tahun 2014 (Perubahan atas UU No.27/2007)</h4>
+              <p class="lh-lg">UU No.1 Tahun 2014 menekankan pentingnya pengelolaan wilayah pesisir secara adaptif akibat perubahan garis pantai karena abrasi. Hal ini mendorong pemerintah untuk memperbarui RZWP3K serta mengalihkan pendekatan pembangunan dari infrastruktur keras menuju solusi berbasis alam (nature-based solutions) seperti restorasi mangrove.</p>
+            </div>
+            <div class="service p-4 shadow  text-white rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" style="background-color: #4169E1;">
+              <i class="fa-solid fa-user-tie mb-3"></i>
+              <h4 class="mb-3 fw-bold">Perpres No. 120 Tahun 2020</h4>
+              <p class="lh-lg">Perpres No.120 Tahun 2020 memperkuat peran Badan Restorasi Gambut dan Mangrove (BRGM) dalam melakukan restorasi mangrove, tidak hanya untuk rehabilitasi ekosistem tetapi juga untuk membantu pemulihan daratan melalui proses sedimentasi alami.
+
+</p>
+            </div>
+            <div class="service p-4 shadow  text-white rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" style="background-color: #4169E1;">
+              <i class="fa-solid fa-user-tie mb-3"></i>
+              <h4 class="mb-3 fw-bold">PP No.18 Tahun 2021</h4>
+              <p class="lh-lg">PP No.18 Tahun 2021 memberikan dasar hukum untuk penataan ulang wilayah pesisir yang mengalami kehilangan daratan akibat abrasi, sehingga pemerintah dapat mengelola kembali kawasan tersebut tanpa terkendala konflik status lahan.
+</p>
+            </div>
+
+        </div>
+        
+      </div>
+    </section>
+    <!-- Terumbu -->
+
+<!-- Hero Background Only -->
+<section class="hero overflow-hidden mt-3"
+class="kesimpulan" id="kesimpulan"
+  style="
+    background-image: url('assets/images/BG.png');
+    background-size: cover;
+    background-position: center;
+    height: 200px; /* diperbesar agar proporsional */
+    display: flex;
+    align-items: center; /* vertikal rata tengah */
+  ">
+    <div class="container">
+    <div class="about-box text-center" style="color:white;">
+      
+      <h1 class="fw-bold mb-4 mt-5" 
+      data-aos="fade-up" 
+      data-aos-duration="1000">
+      KESIMPULAN
+      </h1>
+
+      <h2 class="fw-bold mb-4 mt-5" 
+      data-aos="fade-up" 
+      data-aos-duration="1000">
+      </h2>
+
+    </div>
+</div>
+  </div>
+
+</section>
+<!-- End Hero -->
+
+<!-- Mangrove -->
+    <section>
+      <div class="container">
+        <div class="about-box text-center">
+          <p class="lh-lg mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <h2 class="fw-bold mb-4 mt-5" data-aos="fade-up" data-aos-duration="1000"></h2>
+           Berdasarkan analisis spasiotemporal di Desa Bedono, dapat disimpulkan bahwa wilayah pesisir ini mengalami dinamika lingkungan yang sangat kontras antara tekanan abrasi alami dan keberhasilan upaya restorasi manusia. Meskipun sempat terjadi penurunan luas vegetasi yang signifikan akibat faktor biofisik seperti kenaikan muka air laut dan kerusakan tanaman, penggunaan teknologi Google Earth Engine membuktikan bahwa program rehabilitasi bertahap telah membuahkan hasil positif yang ditandai dengan kembalinya kerapatan mangrove di sepanjang garis pantai. Keberhasilan pemulihan ekosistem ini tidak terlepas dari sinergi antara kebijakan pemerintah, dukungan sektor swasta, dan partisipasi aktif masyarakat lokal dalam menerapkan solusi berbasis alam demi menjaga stabilitas wilayah pesisir dari ancaman degradasi lebih lanjut.
+          </p>
+        
+        </div>
+      </div>
+    </section>
+    <!-- Mangrove-->
+
+
+<!-- Hero Background Only -->
+<section class="hero overflow-hidden mt-3"
+class="GeoAI" id="GeoAI"
+  style="
+    background-image: url('assets/images/BG.png');
+    background-size: cover;
+    background-position: center;
+    height: 200px; /* diperbesar agar proporsional */
+    display: flex;
+    align-items: center; /* vertikal rata tengah */
+  ">
+    <div class="container">
+    <div class="about-box text-center" style="color:white;">
+      
+      <h1 class="fw-bold mb-4 mt-5" 
+      data-aos="fade-up" 
+      data-aos-duration="1000">
+      GeoAI
+      </h1>
+
+      <h2 class="fw-bold mb-4 mt-5" 
+      data-aos="fade-up" 
+      data-aos-duration="1000">
+      </h2>
+
+    </div>
+</div>
+  </div>
+
+</section>
+<!-- End Hero -->
+
+ <section>
+      <div style="
+text-align:center;
+margin-top:40px;
+display:flex;
+justify-content:center;
+">
+
+<div style="
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.15);
+width:550px;
+">
+
+<h3 style="margin-bottom:20px;">
+Peran GeoAI dalam Analisis
+</h3>
+
+<ul style="
+list-style-position: inside;
+text-align:left;
+line-height:1.8;
+font-size:16px;
+">
+
+<li>Mengidentifikasi kondisi dan kerapatan vegetasi mangrove</li>
+
+<li>Menganalisis perubahan mangrove dari waktu ke waktu</li>
+
+<li>Menampilkan tren peningkatan atau penurunan NDVI</li>
+
+<li>Mengestimasi luas mangrove berbasis threshold NDVI</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div style="
+text-align:center;
+margin-top:40px;
+display:flex;
+justify-content:center;
+">
+
+<div style="
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.15);
+width:800px;
+">
+
+<h3 style="margin-bottom:20px;">
+Keterbatasan Tanpa GeoAI
+</h3>
+
+<ul style="
+list-style-position: inside;
+text-align:left;
+line-height:1.8;
+font-size:16px;
+">
+
+<li>Sulit membedakan mangrove dengan vegetasi pesisir lainnya secara akurat</li>
+
+<li>Berpotensi terjadi overestimasi atau underestimasi dalam perhitungan luas mangrove</li>
+
+<li>Tidak mampu menangkap pola perubahan vegetasi yang kompleks dan non-linear</li>
+
+</ul>
+
+</div>
+
+</div>
+    </section>
+
+<!-- Footer -->
+<section class="footer py-3" style="background-color: #82C0C9;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-auto text-center text-black">
+        <div class="d-flex flex-column flex-md-row align-items-center gap-2">
+          <img
+            src="./assets/icon/UGM-removebg-preview.png"
+            alt="Logo"
+            width="140"
+            height="50"
+            class="d-inline-block align-text-top rounded"
+          />
+          <h2 class="text-black m-0">
+            Pemantauan Restorasu Mangrove
+          </h2>
+        </div>
+        <p class="lh-lg opacity-75 m-0">
+          Pengelolaan Wilayah Pesisir – Kelompok 6
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
